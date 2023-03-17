@@ -78,3 +78,6 @@ while task.wait() do
     Spawner.runEntity(entitySplitter)
     wait(120)
 end
+
+game:GetService("Lighting").FogEnd = 100
+game:GetService("Lighting").FogColor = Color3.new(0.25, 0, 0)
