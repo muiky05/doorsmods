@@ -66,15 +66,15 @@ local entitySplitter = Spawner.createEntity({
 
 -- Load the system
 while task.wait() do
-    wait(120)
-    Spawner.runEntity(entityHellspawn)
-    wait(45)
-    Spawner.runEntity(entitySplitter)
-    wait(60)
+    wait(240)
     Spawner.runEntity(entityHellspawn)
     wait(90)
-    Spawner.runEntity(entityHellspawn)
-    wait(300)
     Spawner.runEntity(entitySplitter)
-    wait(60)
+    wait(120)
+    Spawner.runEntity(entityHellspawn)
+    wait(180)
+    Spawner.runEntity(entityHellspawn)
+    wait(600)
+    Spawner.runEntity(entitySplitter)
+    wait(120)
 end
